@@ -1,21 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Our Menu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+
+<title>Assignment Solution for Module 2</title>
+
+<style>
+
+/********** Base styles **********/
+* {
+	box-sizing: border-box;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin: 0px;
+}
+.box1_1 {
+	background-color: brown;
+	font-size: 1.5em;
+	color: white;
+	float: right;
+	width: auto;
+    height: auto;
+    border: 1px solid black;
+}
+.box2_2 {
+	background-color: #D0A096;
+	font-size: 1.5em;
+	color: white;
+	float: right;
+	width: auto;
+    height: auto;
+    border: 1px solid black;
+}
+.box3_3 {
+	background-color: #AE5643;
+	font-size: 1.5em;
+	color: white;
+	float: right;
+	width: auto;
+    height: auto;
+    border: 1px solid black;
+}
+h1 {
+	margin: 20px;
+}
+p {
+	float: right;
+	padding: auto;
+	position: relative;
+}
+section{
+	clear: both;
+	padding: 5px; 
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	div {
+	background-color: pink;
+    border: 1px solid black;
+    position: relative;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	.box1 {
+		float: right;
+		top: 0px;
+		right: 2.5%;		
+	}
+	.box2 {
+		position: absolute;
+		left: 35%
+	}
+	.box3 {
+		position: absolute;
+		left: 2.5%;
+	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    div {
+	background-color: pink;
+    border: 1px solid black;
+    position: relative;
+	}
+	.box1 {
+		width: 40%;
+		float: right;
+		right: 5%;
+	}
+	.box2 {
+		width: 40%;
+		float: left;
+		left: 5%;
+		margin-bottom: 5%;
+	}
+	.box3 {
+		width: 90%;
+		left: 5%;
+		right: 5%;
+		clear: left;
+	}
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+	div {
+	background-color: pink;
+    border: 1px solid black;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+	}
+	.box1 {
+		width: 90%;
+	}
+	.box2 {
+		width: 90%;
+	}
+	.box3 {
+		width: 90%;
+	}
+}
+
+ </style>
+
 </head>
 <body>
-	<p id="#Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<section>
-	<head>Chicken</head>
-	<p>.Lorem</p>
-</section>
-<section>
-	<head>Beef</head>
-	<p>.Lorem</p>
-</section>
-<section>
-	<head>Sushi</head>
-	<p>.Lorem</p>
-</section>
+	<h1>Our Menu</h1>
+
+<div class="box1">
+	<p class="box1_1">Chicken</p>
+	<section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+</div>
+<div class="box2">
+	<p class="box2_2">Sushi</p>
+	<section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <template></template>mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+</div>
+<div class="box3">
+	<p class="box3_3">Beef</p>
+	<section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+</div>
+
+	
 </body>
 </html>
