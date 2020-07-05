@@ -9,16 +9,46 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <style>
-    	.navbar {
+    	.navbar-brand {
     		background-color: brown;
+    		float: left;
+    	}
+    	.navbar-toggle {
+    		display: 'visible-xs';
+    	}
+    	h1 {
+    		height: 1000px;
     	}
     </style>
 </head>
 <body>
 
 <nav class="navbar navbar-default navbar-static-top">
-  <div class="container">Food, LLC</div>
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar">Chicken</span>
+        <span class="icon-bar">Beef</span>
+        <span class="icon-bar">Sushi</span>
+      </button>
+      <a class="navbar-brand" href="#">Food, LLC</a>
+    </div>
+    <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Chicken</a></li>
+    <li><a href="#">Beef</a></li>
+    <li><a href="#">Sushi</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
 </nav>
+
+<h1 class="text-center">OUR FOOD IS MAD!</h1>
 
 </body>
 </html>
